@@ -11,12 +11,13 @@
     <ImageView
         android:layout_gravity="center_horizontal"
         android:id="@+id/ivLoginLogo"
-        android:layout_width="160dp"
-        android:layout_height="120dp"
+        android:layout_width="@dimen/width_logo"
+        android:layout_height="@dimen/heigh_logo"
         android:src="@drawable/logo"
         tools:ignore="MissingConstraints" />
     <EditText
         android:id="@+id/etLoginUsername"
+        style="@style/AppTheme.EditTextStyle"
         android:padding="12dp"
         android:layout_marginTop="120dp"
         android:layout_marginStart="12dp"
@@ -29,6 +30,7 @@
         tools:ignore="MissingConstraints"
         android:drawableLeft="@drawable/vector_person" />
     <EditText
+        style="@style/AppTheme.EditTextStyle"
         android:layout_below="@id/etLoginUsername"
         android:padding="12dp"
         android:layout_marginTop="180dp"
@@ -45,7 +47,7 @@
         android:background="@color/colorPrimary"
         android:text="@string/login"
         android:layout_width="match_parent"
-        android:layout_margin="12dp"
+        android:layout_margin="@dimen/margin_default"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints" />
 
