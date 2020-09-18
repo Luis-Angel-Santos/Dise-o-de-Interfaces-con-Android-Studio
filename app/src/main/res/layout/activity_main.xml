@@ -7,28 +7,28 @@
     android:background="@android:color/white"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/ivLoginLogo"
-        android:layout_width="@dimen/width_logo"
-        android:layout_height="@dimen/heigh_logo"
-        android:src="@drawable/logo"
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/merge_logo"/>
 
     <EditText
         android:id="@+id/etLoginUsername"
         style="@style/AppTheme.EditTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ivLoginLogo"
+        android:layout_below="@+id/includeLogo"
         android:drawableStart="@drawable/vector_person"
         android:drawableLeft="@drawable/vector_person"
         android:hint="@string/hint_usuario"
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivLoginLogo" />
+        app:layout_constraintTop_toBottomOf="@+id/ivLoginLogo" />
 
     <EditText
         style="@style/AppTheme.EditTextStyle"
